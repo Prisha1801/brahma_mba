@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-700 antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold text-bviom-dark;
+  }
+}
+
+@layer components {
+
+  /* ─── Section Title Component ─── */
+  .section-title {
+    @apply text-3xl md:text-4xl font-heading font-extrabold tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-gray-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mt-4;
+  }
+
+  .section-divider {
+    @apply w-16 h-1 bg-gradient-to-r from-bviom-green to-bviom-green-300 rounded-full mx-auto mt-4;
+  }
+
+  /* ─── Premium Button ─── */
+  .btn-primary {
+    @apply bg-bviom-green text-white font-heading font-semibold px-8 py-3 rounded-lg shadow-lg shadow-bviom-green/20 hover:shadow-bviom-green/40 hover:bg-bviom-green-600 transition-all duration-300 uppercase tracking-wider text-sm;
+  }
+
+  .btn-outline {
+    @apply border-2 border-bviom-green text-bviom-green font-heading font-semibold px-8 py-3 rounded-lg hover:bg-bviom-green hover:text-white transition-all duration-300 uppercase tracking-wider text-sm;
+  }
+
+  /* ─── Premium Card ─── */
+  .premium-card {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-400 border border-gray-100/60;
+  }
+}
+
+@layer utilities {
+  .text-gradient-green {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-bviom-green to-emerald-400;
+  }
+
+  .bg-gradient-green {
+    @apply bg-gradient-to-br from-bviom-green via-bviom-green-600 to-emerald-700;
+  }
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #009448, #006030);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #006030, #004d26);
+}
+
+/* ─── Marquee Animation ─── */
+.animate-marquee-rtl {
+  display: flex;
+  animation: marquee-rtl 35s linear infinite;
+}
+
+@keyframes marquee-rtl {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ─── Smooth Image Loading ─── */
+img {
+  image-rendering: auto;
+}
