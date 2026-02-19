@@ -1,43 +1,50 @@
 import React from 'react';
 import HeroSection from '../common/components/HeroSection';
 import { boardMembersHero } from '../common/data/heroData';
+import rajaramImg from "../../assets/board-members/Mr. Rajaram D.Pangavhane.png";
+import dhanishaImg from "../../assets/board-members/Dr.Dhanisha G. Pangavhane.png";
+import gauravImg from "../../assets/board-members/Mr. Gaurav R. Pangavhane.png";
+import ashwiniImg from "../../assets/board-members/Mrs. Ashwini A Bhosale.jpg";
+import sheetalImg from "../../assets/board-members/Mrs. Sheetal Y. Mule.jpg";
+import prabhavatiImg from "../../assets/board-members/Mrs.Prabhavati R. Pangavhane.jpg";
+import rohiniImg from "../../assets/board-members/Mrs.Rohini A Bhosle.jpg"
 
 const BoardMembers = () => {
     const members = [
         {
             name: "Mr. Rajaram D.Pangavhane (Patil)",
             role: "President",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/board_members/members/1752043332_90a16cc599f3d5393905.png",
+            image: rajaramImg,
         },
         {
             name: "Dr.Dhanisha G. Pangavhane (Patil)",
             role: "Vice President",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/board_members/members/1752064603_5bea3f23392255e13f03.png",
+            image: dhanishaImg,
         },
         {
             name: "Mrs. Ashwini A Bhosale",
             role: "Vice President",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/board_members/members/1755845380_81b4a62b1a01f5eb7d00.jpg",
+            image: ashwiniImg,
         },
         {
             name: "Mr. Gaurav R. Pangavhane (Patil)",
             role: "General Secretary",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/board_members/members/1752043429_757f38234349b21d3378.png",
+            image: gauravImg,
         },
         {
             name: "Mrs.Prabhavati R. Pangavhane",
             role: "Joint Secretary",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/board_members/members/1755845410_108c18fb7870cd86bfbf.jpg",
+            image: prabhavatiImg,
         },
         {
             name: "Mrs.Rohini A Bhosle",
             role: "Member",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/board_members/members/1755845423_9a0d444ca1d23e552f9e.jpg",
+            image: rohiniImg,
         },
         {
             name: "Mrs. Sheetal Y. Mule",
             role: "Member",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/board_members/members/1755845434_56ba6e8dd23b0a525081.jpg",
+            image: sheetalImg,
         },
     ];
 

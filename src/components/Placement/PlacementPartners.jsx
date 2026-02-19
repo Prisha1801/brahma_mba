@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import logo1 from '../../assets/place-part/1752214889_96778bc6f444392e4f33.png';
-import logo2 from '../../assets/place-part/1752214924_0152b71ec154ff0ab595.png';
-import logo3 from '../../assets/place-part/1752214965_1ae638e7ba991f72aedc.png';
-import logo4 from '../../assets/place-part/1752215022_9e2dc5dddfe3a7db1bd6.png';
-import logo5 from '../../assets/place-part/1752215043_dedcf1d10df8e722d2dc.png';
-import logo6 from '../../assets/place-part/1752215078_2f51b89ad04c88f3dd9b.png';
-import logo7 from '../../assets/place-part/1752215146_6ad202a4710340c78e21.png';
-import logo8 from '../../assets/place-part/1752215171_ecd15f952e2bd31ec09d.png';
+import logo1 from '../../assets/place-part/bajaj.png';
+import logo2 from '../../assets/place-part/byjus.png';
+import logo3 from '../../assets/place-part/icici.png';
+import logo4 from '../../assets/place-part/jaro.png';
+import logo5 from '../../assets/place-part/kotak.png';
+import logo6 from '../../assets/place-part/reliance.png';
+import logo7 from '../../assets/place-part/tcs.png';
+import logo8 from '../../assets/place-part/yes-bank.png';
 
 const PlacementPartners = () => {
     const partners = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
