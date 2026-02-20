@@ -28,8 +28,10 @@ const AdmissionForm = () => {
     return (
         <section id="home_admission_form" className="relative py-20 md:py-28 overflow-hidden min-h-[700px] flex items-center">
             {/* Background Image — fully visible */}
-            <div className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: { BgImage } }} />
+            <div
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style={{ backgroundImage: `url(${BgImage})` }}
+            />
             {/* Very light overlay for minimal darkening */}
             <div className="absolute inset-0 bg-black/10" />
 
