@@ -36,7 +36,7 @@ const DVVHistory = () => {
                                 <td className="px-6 py-4 border text-sm">1</td>
                                 <td className="px-6 py-4 border text-sm">
                                     <a
-                                        href="https://bvim.brahmavalley.edu.in/public/assets/pdf/naac/dvv/1752304527_71f6a44f0c407439b682.pdf"
+                                        href="/uploads/alumni/dvv.pdf"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-blue-600 hover:text-blue-800 font-medium"

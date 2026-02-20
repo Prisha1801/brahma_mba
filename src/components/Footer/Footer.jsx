@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhoneAlt, FaPhoneSquareAlt, FaGlobe, FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn, FaArrowUp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const quickLinks = [
@@ -122,14 +123,15 @@ const Footer = () => {
 
                     <div className="flex gap-2">
                         {[FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn].map((Icon, idx) => (
-                            <motion.a
-                                key={idx}
-                                href="#"
-                                whileHover={{ y: -3 }}
-                                className="w-9 h-9 bg-white/5 border border-white/10 flex items-center justify-center rounded-lg text-white/40 hover:bg-bviom-green hover:border-bviom-green hover:text-white transition-all duration-300"
-                            >
-                                <Icon size={13} />
-                            </motion.a>
+                            <Link to="/contact">
+                                <motion.button
+                                    whileHover={{ scale: 1.03 }}
+                                    whileTap={{ scale: 1.97 }}
+                                    className="btn-primary text-[11px] py-2.5 px-5 w-fit rounded-lg"
+                                >
+                                    <Icon size={13} />
+                                </motion.button>
+                            </Link>
                         ))}
                     </div>
                 </div>

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import logo1 from '../../assets/posters/left-logo.png';
+import logo2 from '../../assets/posters/right-logo.png';
 
 const Dropdown = ({ title, items }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -136,13 +138,13 @@ const Navbar = () => {
         <header className="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
             <nav className="container mx-auto px-4 lg:px-8 py-2 flex items-center justify-between">
                 {/* Left Logo */}
-                <a href="/" className="flex-shrink-0">
+                <Link to="/">
                     <img
-                        src="https://bvim.brahmavalley.edu.in/public/front_end/img/logo.png"
+                        src={logo1}
                         alt="BVIOM Logo"
                         className="h-12 lg:h-14"
                     />
-                </a>
+                </Link>
 
                 {/* Mobile Menu Toggle */}
                 <button
@@ -167,10 +169,10 @@ const Navbar = () => {
                 `}>
                     <ul className="flex flex-col lg:flex-row items-center gap-2 lg:gap-1 list-none m-0 p-0">
                         <li>
-                            <a href="/" className="font-heading font-semibold text-bviom-dark hover:text-bviom-green py-2 px-4 block text-[13px] uppercase tracking-wide transition-colors relative group">
+                            <Link to="/" className="font-heading font-semibold text-bviom-dark hover:text-bviom-green py-2 px-4 block text-[13px] uppercase tracking-wide transition-colors relative group">
                                 Home
                                 <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-bviom-green scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-                            </a>
+                            </Link>
                         </li>
 
                         {navData.slice(0, 3).map((group, idx) => (
@@ -178,10 +180,10 @@ const Navbar = () => {
                         ))}
 
                         <li>
-                            <a href="/course-structure" className="font-heading font-semibold text-bviom-dark hover:text-bviom-green py-2 px-4 block text-[13px] uppercase tracking-wide transition-colors relative group">
+                            <Link to="/course-structure" className="font-heading font-semibold text-bviom-dark hover:text-bviom-green py-2 px-4 block text-[13px] uppercase tracking-wide transition-colors relative group">
                                 Course Structure
                                 <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-bviom-green scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-                            </a>
+                            </Link>
                         </li>
 
                         {navData.slice(3).map((group, idx) => (
@@ -189,28 +191,28 @@ const Navbar = () => {
                         ))}
 
                         <li>
-                            <a href="/gallery" className="font-heading font-semibold text-bviom-dark hover:text-bviom-green py-2 px-3 block text-[13px] uppercase tracking-wide transition-colors relative group">
+                            <Link to="/gallery" className="font-heading font-semibold text-bviom-dark hover:text-bviom-green py-2 px-3 block text-[13px] uppercase tracking-wide transition-colors relative group">
                                 Gallery
                                 <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-bviom-green scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/contact" className="font-heading font-semibold text-bviom-dark hover:text-bviom-green py-2 px-3 block text-[13px] uppercase tracking-wide transition-colors relative group">
+                            <Link to="/contact" className="font-heading font-semibold text-bviom-dark hover:text-bviom-green py-2 px-3 block text-[13px] uppercase tracking-wide transition-colors relative group">
                                 Contact
                                 <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-bviom-green scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
 
                 {/* Right Logo */}
-                <a href="/" className="hidden lg:block flex-shrink-0">
+                <Link to="/">
                     <img
-                        src="https://bvim.brahmavalley.edu.in/public/assets/img/MBAManagementLogo.png"
+                        src={logo2}
                         alt="MBA Logo"
                         className="h-14"
                     />
-                </a>
+                </Link>
             </nav>
         </header>
     );

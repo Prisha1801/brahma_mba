@@ -1,5 +1,6 @@
 import HeroSection from '../common/components/HeroSection';
 import { hostelHero } from '../common/data/heroData';
+import HostelImage from '../../assets/posters/hostel1.png';
 
 const Hostel = () => {
     return (
@@ -15,7 +16,7 @@ const Hostel = () => {
                             {/* Image Side */}
                             <div className="md:w-5/12">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/1752233670_e8561a9841ac41d487c0.png"
+                                    src={HostelImage}
                                     alt="Hostel Facility"
                                     className="w-full h-full object-cover"
                                 />

@@ -1,47 +1,48 @@
 import React from "react";
 import HeroSection from "../common/components/HeroSection";
 import { industrialVisitHero } from "../common/data/heroData";
+import logo1 from '../../assets/place-part/bajaj.png';
+import logo2 from '../../assets/place-part/parle.png';
+import logo3 from '../../assets/place-part/hdfc.png';
+import logo5 from '../../assets/place-part/kotak.png';
+import logo6 from '../../assets/place-part/mahindra.jpeg';
+import logo7 from '../../assets/place-part/tcs.png';
+import logo8 from '../../assets/place-part/yes-bank.png';
+import logo9 from '../../assets/place-part/abb.png';
+
 
 const visits = [
     {
         name: "YES BANK",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1755855425_a2253f35333154ebf461.png",
+        image: logo8
     },
     {
         name: "BAJAJ FINSERV",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1755855398_ab1b5f78a38d55caf7eb.png",
+        image: logo1
     },
     {
         name: "HDFC BANK",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1755855349_63a299c3e27c1a5abfcd.png",
+        image: logo3
     },
     {
         name: "TCS",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1755855325_4a129330797cea0e2703.png",
+        image: logo7
     },
     {
         name: "KOTAK",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1755855184_d8cc670864c6ab9adf79.png",
+        image: logo5,
     },
     {
         name: "PARLE PVT",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752304052_7b9206ccff1024895e0b.png",
+        image: logo2
     },
     {
         name: "Mahindra & Mahindra",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752302808_a7597924c451c8e9e158.jpeg",
+        image: logo6
     },
     {
         name: "ABB",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752302291_1715694aa444213f3410.png",
+        image: logo9
     },
 ];
 

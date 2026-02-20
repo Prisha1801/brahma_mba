@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../common/components/HeroSection";
 import { culturalProgramHero } from "../common/data/heroData";
+import Person from "../../assets/person.png"
 
 const CulturalProgram = () => {
     return (
@@ -15,7 +16,7 @@ const CulturalProgram = () => {
                         {/* Top Section */}
                         <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mb-8">
                             <img
-                                src="https://bvim.brahmavalley.edu.in/uploads/cultural/1752053811_1583f11711edd7028334.jpg"
+                                src={Person}
                                 alt="Cultural Program"
                                 className="w-32 h-32 rounded-full object-cover"
                             />

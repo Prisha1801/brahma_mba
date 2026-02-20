@@ -9,9 +9,10 @@ import logo5 from '../../assets/place-part/kotak.png';
 import logo6 from '../../assets/place-part/reliance.png';
 import logo7 from '../../assets/place-part/tcs.png';
 import logo8 from '../../assets/place-part/yes-bank.png';
+import logo9 from '../../assets/place-part/larsen.png';
 
 const PlacementPartners = () => {
-    const partners = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
+    const partners = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
 
     return (
         <section className="py-20 md:py-28 bg-white overflow-hidden">

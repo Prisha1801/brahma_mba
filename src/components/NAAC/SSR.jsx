@@ -37,7 +37,7 @@ const SSR = () => {
                                 </td>
                                 <td className="py-3 px-4 border-t border-gray-300">
                                     <a
-                                        href="https://bvim.brahmavalley.edu.in/public/assets/pdf/naac/ssr/1752304962_03e4aa7b5fe179cec8db.pdf"
+                                        href="/uploads/alumni/ssr.pdf"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-blue-600 font-medium hover:text-blue-800 hover:underline transition"

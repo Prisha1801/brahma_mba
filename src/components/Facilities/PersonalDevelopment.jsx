@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../common/components/HeroSection";
 import { personalDevelopmentHero } from "../common/data/heroData";
+import Personaldevelopment from "../../assets/personal-development.jpg"
 
 const PersonalDevelopment = () => {
     return (
@@ -8,8 +9,6 @@ const PersonalDevelopment = () => {
             {/* HERO SECTION */}
             <HeroSection {...personalDevelopmentHero} />
 
-            {/* CONTENT SECTION */}
-            {/* CONTENT SECTION */}
             {/* CONTENT SECTION */}
             <section className="bg-gray-100 py-12 sm:py-16">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -20,7 +19,7 @@ const PersonalDevelopment = () => {
                             {/* IMAGE SIDE */}
                             <div className="md:w-1/2 w-full h-64 sm:h-80 md:h-full">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/1752044682_8b8a753421ae46637e10.jpg"
+                                    src={Personaldevelopment}
                                     alt="Personality Development"
                                     className="w-full h-full object-cover"
                                 />

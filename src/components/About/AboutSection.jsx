@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
+import P4 from '../../assets/home/p4.jpg'
 
 const AboutSection = () => {
     return (
@@ -17,7 +18,7 @@ const AboutSection = () => {
                         className="lg:w-1/2 relative"
                     >
                         <img
-                            src="https://bvim.brahmavalley.edu.in/public/uploads/about_us/1752823428_3fcef3ad157724941726.jpg"
+                            src={P4}
                             alt="BVIOM Campus"
                             className="w-full h-full object-cover min-h-[400px]"
                         />
@@ -60,15 +61,6 @@ const AboutSection = () => {
                                         creates and promotes a studious environment.
                                     </p>
                                 </div>
-
-                                <motion.a
-                                    href="#"
-                                    whileHover={{ scale: 1.05, x: 5 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="mt-10 inline-flex items-center gap-3 bg-white text-bviom-green px-8 py-3.5 rounded-xl font-heading font-bold text-sm uppercase tracking-wider shadow-lg hover:shadow-xl transition-all"
-                                >
-                                    Learn More <FaArrowRight className="text-xs" />
-                                </motion.a>
                             </div>
                         </div>
                     </motion.div>

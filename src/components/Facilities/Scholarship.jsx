@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from '../common/components/HeroSection';
 import { scholarshipHero } from '../common/data/heroData';
+import ScholarshipImage from '../../assets/posters/Scholarship.png';
 const Scholarship = () => {
     return (
         <>
@@ -16,7 +17,7 @@ const Scholarship = () => {
                             {/* Image Column */}
                             <div className="md:w-5/12">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/1752128018_3846cc4682753f827d83.png"
+                                    src={ScholarshipImage}
                                     alt="Scholarship Facility"
                                     className="w-full h-full object-cover"
                                 />

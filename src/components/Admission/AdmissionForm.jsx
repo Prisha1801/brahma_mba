@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope, FaPhone, FaGraduationCap } from 'react-icons/fa';
+import BgImage from '../../assets/posters/admissionForm.png';
 
 const AdmissionForm = () => {
     const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ const AdmissionForm = () => {
         <section id="home_admission_form" className="relative py-20 md:py-28 overflow-hidden min-h-[700px] flex items-center">
             {/* Background Image — fully visible */}
             <div className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: `url(https://bvim.brahmavalley.edu.in/public/assets/img/admissionForm.png)` }} />
+                style={{ backgroundImage: { BgImage } }} />
             {/* Very light overlay for minimal darkening */}
             <div className="absolute inset-0 bg-black/10" />
 

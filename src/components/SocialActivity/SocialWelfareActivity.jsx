@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import HeroSection from "../common/components/HeroSection";
 import { socialWelfareActivityHero } from "../common/data/heroData";
+import s1 from "../../assets/social-welfare/s1.jpg"
+import s2 from "../../assets/social-welfare/s2.jpg";
+import s3 from "../../assets/social-welfare/s3.jpg";
+import s4 from "../../assets/social-welfare/s4.jpg";
 
-const images = [
-    "https://bvim.brahmavalley.edu.in/uploads/social/1752055072_081de5018282c7023aa5.jpg",
-    "https://bvim.brahmavalley.edu.in/uploads/social/1752055058_59840c28fcc5c7b76eb8.jpg",
-    "https://bvim.brahmavalley.edu.in/uploads/social/1752055049_b41ada367476a51870c6.jpg",
-    "https://bvim.brahmavalley.edu.in/uploads/social/1752055039_4be599c9d48c7b6140aa.jpg",
-];
+const images = [s1, s2, s3, s4];
 
 const SocialWelfareActivity = () => {
     const [selectedImage, setSelectedImage] = useState(null);

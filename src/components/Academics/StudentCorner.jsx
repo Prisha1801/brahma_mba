@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import HeroSection from "../common/components/HeroSection";
+import { studentCornerHero } from "../common/data/heroData";
 
 const committees = [
     {
@@ -78,16 +80,7 @@ const StudentCorner = () => {
     return (
         <>
             {/* HERO SECTION */}
-            <section className="bg-gradient-to-r from-[#2e75b5] to-[#1c4e80] py-16 text-center text-white">
-                <div className="max-w-5xl mx-auto px-4">
-                    <h1 className="text-4xl md:text-5xl font-bold">
-                        Student Corner
-                    </h1>
-                    <p className="mt-4 text-lg text-gray-200">
-                        Discover excellence in education and innovation.
-                    </p>
-                </div>
-            </section>
+            <HeroSection {...studentCornerHero} />
 
             {/* ACCORDION SECTION */}
             <section className="bg-gray-100 py-12">

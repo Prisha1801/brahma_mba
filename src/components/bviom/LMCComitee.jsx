@@ -1,67 +1,65 @@
 import React from "react";
 import HeroSection from '../common/components/HeroSection';
 import { lmcComiteeHero } from '../common/data/heroData';
+import rajaramImg from "../../assets/board-members/Mr. Rajaram D.Pangavhane.png";
+import dhanishaImg from "../../assets/board-members/Dr.Dhanisha G. Pangavhane.png";
+import gauravImg from "../../assets/board-members/Mr. Gaurav R. Pangavhane.png";
+import ashwiniImg from "../../assets/board-members/Mrs. Ashwini A Bhosale.jpg";
+import sheetalImg from "../../assets/board-members/Mrs. Sheetal Y. Mule.jpg";
+import prabhavatiImg from "../../assets/board-members/Mrs.Prabhavati R. Pangavhane.jpg";
+import Directormage from '../../assets/posters/director.jpg';
+import person from '../../assets/person.png';
 
 const members = [
     {
         name: "Hon. Mr. Rajaram D.Pangavhane (Patil)",
         role: "President",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752043579_9475762fe0bfd25f52cf.png",
+        image: rajaramImg,
     },
     {
         name: "Mr. Gaurav R. Pangavhane (Patil)",
         role: "Joint Secretary",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752043637_23387894f77ac89dd86d.png",
+        image: gauravImg,
     },
     {
         name: "Dr.Dhanisha G. Pangavhane (Patil)",
         role: "Vice President",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752064637_fd97e348629992f412db.png",
+        image: dhanishaImg,
     },
     {
         name: "Mrs.Prabhavati R. Pangavhane(Patil)",
         role: "Member",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752231855_7fd001114fcf2806da5c.png",
+        image: prabhavatiImg,
     },
     {
         name: "Mr.Bhagwan G. Khairnar",
         role: "Member",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752231941_252c40c82b7ddcfdf7ab.png",
+        image: person,
     },
     {
         name: "Mr.Madhavrao G. Chavan",
         role: "Member",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752232001_d0d2b94f75bc4fb70fdd.png",
+        image: person
     },
     {
         name: "Prof. Mrs.Dianasaroj.K",
         role: "Member",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752232039_f6c0be96ed8a3edfeda6.png",
+        image: person,
     },
     {
         name: "Dr. Sheetal Gader",
         role: "Member",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752233114_f31b4b74b46bb68972e7.png",
+        image: sheetalImg,
     },
     {
         name: "Mr.Sandip.H.Landge",
         role: "Member",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752232481_60d18957869193e35a09.png",
+        image: person,
     },
     {
         name: "Dr. Zafar Khan",
         role: "Member Secretary",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752233127_8788c8629f01848f58bf.png",
+        image: Directormage,
     },
 ];
 

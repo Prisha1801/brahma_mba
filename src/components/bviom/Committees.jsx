@@ -5,55 +5,55 @@ import { CommitteeHero } from '../common/data/heroData';
 const committees = [
     {
         name: "Academic Monitoring Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Academic%20Monitoring%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Academic Monitoring Committee - 2025_26.pdf",
     },
     {
         name: "Anti-Ragging Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Anti_Ragging%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Anti_Ragging Committee - 2025_26.pdf",
     },
     {
         name: "Anti-Ragging Squad Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Anti_Ragging%20Squad%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Anti_Ragging Squad Committee - 2025_26.pdf",
     },
     {
         name: "College Development Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/College%20Development%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/College Development Committee - 2025_26.pdf",
     },
     {
         name: "Cultural Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Cultural%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Cultural Committee - 2025_26.pdf",
     },
     {
         name: "Equal Opportunity Cell Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Equal%20Opportunity%20Cell%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Equal Opportunity Cell Committee - 2025_26.pdf",
     },
     {
         name: "Internal Complaint Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Internal%20Complaint%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Internal Complaint Committee - 2025_26.pdf",
     },
     {
         name: "Internal Quality Assurance Cell Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Internal%20Quality%20Assurance%20Cell%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Internal Quality Assurance Cell Committee - 2025_26.pdf",
     },
     {
         name: "Minority Cell Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Minority%20Cell%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Minority Cell Committee - 2025_26.pdf",
     },
     {
         name: "National Education Policy (NEP) Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/National%20Education%20Policy%20Committee%20%28NEP%29%20-%202025_26.pdf",
+        pdf: "/uploads/committee/National Education Policy Committee (NEP) - 2025_26.pdf",
     },
     {
         name: "Other Backward Classes (OBC) Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Other%20Backward%20Classes%20%28OBC%29%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Other Backward Classes (OBC) Committee - 2025_26.pdf",
     },
     {
         name: "Student Council Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Student%20Council%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Student Council Committee - 2025_26.pdf",
     },
     {
         name: "Student Grievance Redressal Committee – 2025–26",
-        pdf: "https://bvim.brahmavalley.edu.in/public/committees/Student%20Grievance%20Redrassal%20Committee%20-%202025_26.pdf",
+        pdf: "/uploads/committee/Student Grievance Redrassal Committee - 2025_26.pdf",
     },
 ];
 

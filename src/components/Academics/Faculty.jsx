@@ -1,85 +1,84 @@
 import React from "react";
 import HeroSection from "../common/components/HeroSection";
 import { facilitiesHero } from "../common/data/heroData";
+import rajaramImg from "../../assets/board-members/Mr. Rajaram D.Pangavhane.png";
+import dhanishaImg from "../../assets/board-members/Dr.Dhanisha G. Pangavhane.png";
+import gauravImg from "../../assets/board-members/Mr. Gaurav R. Pangavhane.png";
+import ashwiniImg from "../../assets/board-members/Mrs. Ashwini A Bhosale.jpg";
+import sheetalImg from "../../assets/board-members/Mrs. Sheetal Y. Mule.jpg";
+import prabhavatiImg from "../../assets/board-members/Mrs.Prabhavati R. Pangavhane.jpg";
+import Directormage from '../../assets/posters/director.jpg';
+import staff3 from '../../assets/staff/dimple.png';
+import staff4 from '../../assets/staff/rahul.png';
+import krishna from '../../assets/staff/krishna.png';
+import nikita from '../../assets/staff/nikita.png';
+import person from '../../assets/person.png';
 
 const facultyMembers = [
     {
         name: "Dr. Zafar Khan",
         role: "Director",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1771329963_ed2fca19dd9f2ba44ed0.png",
+        image: Directormage
     },
     {
         name: "Dr. Sheetal Gade",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752234121_b9c3bda318b88af2a41b.png",
+        image: sheetalImg,
     },
     {
         name: "Prof. Dianasaroj K.",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752045578_37d7153bd1d51d8a9181.jpg",
+        image: person,
     },
     {
         name: "Prof. Sonal Patange",
         role: "Asst. Professor, Exam Coordinator",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752045960_b4697d441971c3fff3c7.jpg",
+        image: person,
     },
     {
         name: "Prof. Dimpal Zambare",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1771330133_40d1583128f1aabc1ed8.png",
+        image: staff3,
     },
     {
         name: "Prof. Rahul Sonawane",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1771330220_daddce426cf8cc7feaed.png",
+        image: staff4,
     },
     {
         name: "Prof. Radhika Torawne",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752046060_5090dd7f9823f12cbb05.jpg",
+        image: person,
     },
     {
         name: "Prof. Radhika Deshmukh",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752046084_204a539890d20a76f1ef.jpg",
+        image: person,
     },
     {
         name: "Prof. Prashansa Khaire",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752046107_8b03f7300bb3242a4716.jpg",
+        image: person,
     },
     {
         name: "Prof. Rahul Thorat",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752046131_0e4b9a9ec27faaa10b2e.jpg",
+        image: person,
     },
     {
         name: "Prof. Apoorva Pakdhane",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1752046154_0ddbd3da6761801502b3.jpg",
+        image: person,
     },
     {
         name: "Prof. Nikita Kekan",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1771330156_bb91ab3b80b1836f735d.png",
+        image: nikita,
     },
     {
         name: "Krishna Ramayane",
         role: "Asst. Professor",
-        image:
-            "https://bvim.brahmavalley.edu.in/public/uploads/1771330049_492afa5a697cd74d73bb.png",
+        image: krishna,
     },
 ];
 
@@ -107,7 +106,7 @@ const Faculty = () => {
                                     <img
                                         src={member.image}
                                         alt={member.name}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-contain"
                                     />
                                 </div>
 

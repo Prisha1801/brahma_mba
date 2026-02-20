@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from '../common/components/HeroSection';
 import { directorDeskHero } from '../common/data/heroData';
+import Directormage from '../../assets/posters/director.jpg';
 
 const DirectorDesk = () => {
     return (
@@ -28,7 +29,7 @@ const DirectorDesk = () => {
                             {/* LEFT SIDE - IMAGE */}
                             <div className="text-center">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/director/director_1771306486.jpg"
+                                    src={Directormage}
                                     alt="Director"
                                     className="w-full max-h-[450px] object-cover rounded-xl shadow-md"
                                 />

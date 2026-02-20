@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { eligibilityHero } from "../common/data/heroData";
+import HeroSection from "../common/components/HeroSection";
 const Eligibility = () => {
     const [activeIndex, setActiveIndex] = useState(null); // all closed initially
 
@@ -257,20 +259,7 @@ const Eligibility = () => {
     return (
         <div>
             {/* HERO SECTION */}
-            <section
-                className="py-20 text-center text-white bg-cover bg-center"
-                style={{
-                    backgroundImage:
-                        "url('https://bvim.brahmavalley.edu.in/public/uploads/1752058546_ce5c64dbb5bf0d12a7b4.png')",
-                }}
-            >
-                <div className=" py-16">
-                    <h1 className="text-4xl font-bold mb-4">Eligibility Criteria MBA</h1>
-                    <p className="text-lg">
-                        Discover excellence in education and innovation.
-                    </p>
-                </div>
-            </section>
+            <HeroSection {...eligibilityHero} />
 
             {/* ACCORDION SECTION */}
             <div className="max-w-5xl mx-auto my-12 px-4">

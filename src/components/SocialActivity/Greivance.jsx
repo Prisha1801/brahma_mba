@@ -2,6 +2,8 @@ import React from "react";
 import { FileText } from "lucide-react";
 import HeroSection from "../common/components/HeroSection";
 import { greivanceHero } from "../common/data/heroData";
+import { Link } from "react-router-dom";
+
 
 const Grievance = () => {
     return (
@@ -49,15 +51,15 @@ const Grievance = () => {
                                             Grievance
                                         </td>
                                         <td className="px-6 py-4 border">
-                                            <a
-                                                href="https://bvim.brahmavalley.edu.in/public/grievance/Grievance.docx"
+                                            <Link
+                                                to="/uploads/alumni/Grievance.docx"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-700 transition"
                                             >
                                                 <FileText size={16} />
                                                 Download DOCX
-                                            </a>
+                                            </Link>
                                         </td>
                                     </tr>
 

@@ -40,7 +40,7 @@ const IIQA = () => {
                                         <td className="px-6 py-4 border text-sm">1</td>
                                         <td className="px-6 py-4 border text-sm">
                                             <a
-                                                href="https://bvim.brahmavalley.edu.in/public/assets/pdf/naac/iiqc/1752304404_09b53615949dc47e7b84.pdf"
+                                                href="/uploads/alumni/iiqa.pdf"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="text-blue-600 hover:text-blue-800 font-medium"

@@ -1,37 +1,12 @@
 import React from "react";
+import HeroSection from '../common/components/HeroSection';
+import { missionHero } from '../common/data/heroData';
 
 const MissionVision = () => {
     return (
         <>
             {/* HERO SECTION */}
-            <section
-                className="w-full h-[60vh] bg-center bg-cover bg-no-repeat flex items-center justify-center relative text-center"
-                style={{
-                    backgroundImage:
-                        "url('https://bvim.brahmavalley.edu.in/public/uploads/banner_1752044130.png')",
-                }}
-            >
-                <div className="absolute inset-0 bg-black/50"></div>
-
-                <div className="relative px-6">
-                    <h1
-                        data-aos="fade-up"
-                        data-aos-duration="1000"
-                        className="text-white text-4xl md:text-5xl font-bold font-heading"
-                    >
-                        Vision Mission
-                    </h1>
-
-                    <p
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-aos-duration="1200"
-                        className="text-white mt-4 text-lg"
-                    >
-                        Brahma Valley MBA College
-                    </p>
-                </div>
-            </section>
+            <HeroSection {...missionHero} />
 
             {/* VISION & MISSION SECTION */}
             <section id="vision-mission" className="bg-gray-100 py-16">

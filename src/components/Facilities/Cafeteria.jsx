@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../common/components/HeroSection";
 import { cafeteriaHero } from "../common/data/heroData";
+import CafeteriaHeroImage from "../../assets/posters/cafeteria.png";
 const Cafeteria = () => {
     return (
         <>
@@ -16,7 +17,7 @@ const Cafeteria = () => {
                             {/* Image Column */}
                             <div className="md:w-5/12">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/1752233748_f500dfd6f7af35d82699.png"
+                                    src={CafeteriaHeroImage}
                                     alt="Cafeteria Facility"
                                     className="w-full h-full object-cover"
                                 />

@@ -1,22 +1,21 @@
 import HeroSection from "../common/components/HeroSection";
 import { courseStructureHero } from "../common/data/heroData";
-
 const CourseStructure = () => {
     const syllabusData = [
         {
             id: 1,
             title: "MBA 2019 Pattern Syllabus",
-            link: "https://bvim.brahmavalley.edu.in/public/uploads/1752049143_1ed6165a332d8743c1f4.pdf",
+            link: "/uploads/alumni/mba1.pdf",
         },
         {
             id: 2,
             title: "MBA 2019 Pattern Syllabus Revised",
-            link: "https://bvim.brahmavalley.edu.in/public/uploads/1752049160_8f9579af27b7c6f2d0a9.pdf",
+            link: "/uploads/alumni/mba2.pdf",
         },
         {
             id: 3,
             title: "MBA 2024 Pattern Syllabus",
-            link: "https://bvim.brahmavalley.edu.in/public/uploads/1752824078_35f6e553fe1940ec6dc1.pdf",
+            link: "/uploads/alumni/mba3.pdf",
         },
     ];
 

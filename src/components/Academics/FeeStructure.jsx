@@ -1,30 +1,25 @@
 import React from "react";
+import HeroSection from "../common/components/HeroSection";
+import { feesStructureHero } from "../common/data/heroData";
 
 const FeeStructure = () => {
     const feeData = [
         {
             id: 1,
             title: "BBA STRUCTURE",
-            link: "https://bvim.brahmavalley.edu.in/public/uploads/pdfs/1752309506_3c4ce9578209b0b543d7.pdf",
+            link: "/uploads/alumni/bba-fees-structure.pdf",
         },
         {
             id: 2,
             title: "MBA",
-            link: "https://bvim.brahmavalley.edu.in/public/uploads/pdfs/1752312276_5e629388fb83f72372eb.pdf",
+            link: "/uploads/aumni/mba-fees-structure.pdf",
         },
     ];
 
     return (
         <div>
             {/* HERO SECTION */}
-            <section className="bg-gradient-to-r from-[#0f5c74] to-[#3ec6c1] py-24 text-center text-white">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    Fee Structure
-                </h1>
-                <p className="text-lg opacity-90">
-                    Discover excellence in education and innovation.
-                </p>
-            </section>
+            <HeroSection {...feesStructureHero} />
 
             {/* TABLE SECTION */}
             <div className="max-w-6xl mx-auto px-4 py-16">

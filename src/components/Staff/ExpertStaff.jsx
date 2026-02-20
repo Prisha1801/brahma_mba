@@ -1,28 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
+import staff1 from '../../assets/posters/director.jpg';
+import staff2 from '../../assets/staff/sheetal.png';
+import staff3 from '../../assets/staff/dimple.png';
+import staff4 from '../../assets/staff/rahul.png';
+import { Link } from 'react-router-dom';
 
 const ExpertStaff = () => {
     const staff = [
         {
             name: "Dr. Zafar Khan",
             title: "Director",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/staff/1771390771_685f0c4a01036c5b3827.png"
+            image: staff1
         },
         {
             name: "Dr. Sheetal Gader",
             title: "Assistant Professor",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/staff/1752232874_5a0453db44d21be79762.png"
+            image: staff2
         },
         {
             name: "Prof. Dimple",
             title: "Assistant Professor",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/staff/1771390815_33e4bde565f4e22c2967.png"
+            image: staff3
         },
         {
             name: "Prof. Rahul Sonawane",
             title: "Assistant Professor",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/staff/1771390848_0df3165956d412ee0bc3.png"
+            image: staff4
         }
     ];
 
@@ -85,13 +90,16 @@ const ExpertStaff = () => {
                 </div>
 
                 <div className="text-center mt-14">
-                    <motion.a
-                        href="#"
-                        whileHover={{ x: 8 }}
-                        className="inline-flex items-center gap-3 text-bviom-green font-heading font-semibold text-lg hover:text-bviom-green-600 transition-colors"
-                    >
-                        Show More <FaArrowRight className="text-sm" />
-                    </motion.a>
+                    {/* here we will use link */}
+                    <Link to="/faculty">
+                        <motion.button
+                            whileHover={{ scale: 1.03 }}
+                            whileTap={{ scale: 0.97 }}
+                            className="btn-primary text-[11px] py-2.5 px-5 rounded-lg"
+                        >
+                            View Details
+                        </motion.button>
+                    </Link>
                 </div>
             </div>
         </section>

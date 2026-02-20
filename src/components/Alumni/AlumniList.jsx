@@ -1,17 +1,18 @@
 import HeroSection from "../common/components/HeroSection";
 import { alumniHero } from "../common/data/heroData";
+import { Link } from "react-router-dom";
 
 const AlumniList = () => {
     const alumniData = [
         {
             id: 1,
             year: "2022-2023",
-            link: "https://bvim.brahmavalley.edu.in/public/uploads/pdfs/1752235504_9a9ccdfd502f9e8763ff.pdf",
+            link: "/uploads/alumni/p1.pdf",
         },
         {
             id: 2,
             year: "2023-2024",
-            link: "https://bvim.brahmavalley.edu.in/public/uploads/pdfs/1752301427_8ba3aa7703fef6dcc786.pdf",
+            link: "/uploads/alumni/p2.pdf",
         },
     ];
 
@@ -58,14 +59,9 @@ const AlumniList = () => {
                                             {item.year}
                                         </td>
                                         <td className="px-6 py-4">
-                                            <a
-                                                href={item.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-blue-600 hover:underline font-medium"
-                                            >
+                                            <Link to={item.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
                                                 Click Here
-                                            </a>
+                                            </Link>
                                         </td>
                                     </tr>
                                 ))}

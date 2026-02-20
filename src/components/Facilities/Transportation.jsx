@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from '../common/components/HeroSection';
 import { transportationHero } from '../common/data/heroData';
+import busImage from '../../assets/posters/bus.png';
 
 const Transportation = () => {
     return (
@@ -17,7 +18,7 @@ const Transportation = () => {
                             {/* Image Column */}
                             <div className="md:w-1/2">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/1753853783_3a8c635102d2ee75bf1e.png"
+                                    src={busImage}
                                     alt="Transport Facility"
                                     className="w-full h-full object-cover"
                                 />

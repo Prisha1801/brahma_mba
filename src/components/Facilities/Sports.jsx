@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../common/components/HeroSection";
 import { sportsHero } from "../common/data/heroData";
+import SportHeroImage from "../../assets/posters/sport.png";
 
 const Sports = () => {
     return (
@@ -18,7 +19,7 @@ const Sports = () => {
                             {/* Image Column */}
                             <div className="md:w-5/12">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/1752233885_8ac4332cc912308306d4.png"
+                                    src={SportHeroImage}
                                     alt="Sports Facility"
                                     className="w-full h-full object-cover"
                                 />

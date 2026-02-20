@@ -1,4 +1,13 @@
 import React from 'react';
+import MBAAdmission from "../../assets/MBA_Admission_2025_26_Final.jpg";
+import { Link } from 'react-router-dom';
+//now we will use social media icons which we have in
+import fb from "../../assets/social-icons/fb.jpg"
+import insta from "../../assets/social-icons/ig.jpg"
+import linkedin from "../../assets/social-icons/id.jpg"
+import youtube from "../../assets/social-icons/yt.jpg"
+import whatsapp from "../../assets/social-icons/wp.jpg"
+import three from "../../assets/social-icons/360.jpg"
 
 const TopBar = () => {
     return (
@@ -6,14 +15,11 @@ const TopBar = () => {
             <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
                 <ul className="flex items-center gap-6 list-none m-0 p-0">
                     <li>
-                        <a
-                            href="https://bvim.brahmavalley.edu.in/public/front_end/img/MBA_Admission_2025_26_Final.jpg"
-                            target="_blank"
-                            className="hover:text-bviom-green transition-colors font-medium flex items-center gap-1.5"
-                        >
+
+                        <Link to={MBAAdmission} target="_blank" className="hover:text-bviom-green transition-colors font-medium flex items-center gap-1.5">
                             <span className="w-1 h-1 rounded-full bg-bviom-green inline-block" />
                             Download E-Brochures
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a
@@ -31,12 +37,12 @@ const TopBar = () => {
                         <span className="text-bviom-green font-semibold uppercase tracking-wider text-[10px]">Get Connected</span>
                     </li>
                     {[
-                        { src: "https://bvim.brahmavalley.edu.in/public/front_end/img/wp.jpg", alt: "WhatsApp" },
-                        { src: "https://bvim.brahmavalley.edu.in/public/front_end/img/360.jpg", alt: "360" },
-                        { src: "https://bvim.brahmavalley.edu.in/public/front_end/img/fb.jpg", alt: "Facebook" },
-                        { src: "https://bvim.brahmavalley.edu.in/public/front_end/img/ig.jpg", alt: "Instagram" },
-                        { src: "https://bvim.brahmavalley.edu.in/public/front_end/img/id.jpg", alt: "LinkedIn" },
-                        { src: "https://bvim.brahmavalley.edu.in/public/front_end/img/yt.jpg", alt: "YouTube" }
+                        { src: whatsapp, alt: "WhatsApp" },
+                        { src: three, alt: "360" },
+                        { src: fb, alt: "Facebook" },
+                        { src: insta, alt: "Instagram" },
+                        { src: linkedin, alt: "LinkedIn" },
+                        { src: youtube, alt: "YouTube" }
                     ].map((item, idx) => (
                         <li key={idx}>
                             <a href="#" target="_blank" className="block w-5 h-5 rounded overflow-hidden hover:scale-125 transition-transform">

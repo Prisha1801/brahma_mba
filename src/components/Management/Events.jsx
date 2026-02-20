@@ -1,27 +1,29 @@
 import React, { useState } from "react";
 import HeroSection from "../common/components/HeroSection";
 import { eventsHero } from "../common/data/heroData";
+import event1 from "../../assets/event/event1.jpg"
+import event2 from "../../assets/event/event2.jpg"
+import event3 from "../../assets/event/event3.jpg"
+import event4 from "../../assets/event/event4.jpg"
 
 const events = [
     {
         title: "Group Photos",
         image:
-            "https://bvim.brahmavalley.edu.in/uploads/events/1752227593_69ca783ecd0fe6342434.jpg",
+            event1,
     },
     {
         title: "Freshers Party",
         image:
-            "https://bvim.brahmavalley.edu.in/uploads/events/1752227568_e70f0be7540435df552d.jpg",
+            event2,
     },
     {
         title: "Seminars",
-        image:
-            "https://bvim.brahmavalley.edu.in/uploads/events/1752227537_17eede64ddc5f0386533.jpg",
+        image: event3,
     },
     {
         title: "Seminars",
-        image:
-            "https://bvim.brahmavalley.edu.in/uploads/events/1752227429_089e253eed9d2cbb6a7a.jpg",
+        image: event4,
     },
 ];
 

@@ -1,28 +1,34 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
+import MarketingIcon from '../../assets/icons/marketing.svg';
+import FinancialIcon from '../../assets/icons/finance.svg';
+import OperationsIcon from '../../assets/icons/operation.svg';
+import BusinessAnalyticsIcon from '../../assets/icons/ba.svg';
+import HumanResourcesIcon from '../../assets/icons/hr.svg';
+import { Link } from 'react-router-dom';
 
 const Specializations = () => {
     const specializations = [
         {
             title: "Marketing Management",
-            icon: "https://bvim.brahmavalley.edu.in/public/uploads/1752142620_603d0a27d7024b0f566a.svg"
+            icon: MarketingIcon
         },
         {
             title: "Financial Management",
-            icon: "https://bvim.brahmavalley.edu.in/public/uploads/1752142628_112a191dc7cd8c6d7a6b.svg"
+            icon: FinancialIcon
         },
         {
             title: "Human Resources Management (HRM)",
-            icon: "https://bvim.brahmavalley.edu.in/public/uploads/1752142635_aa3465ff30563e49738b.svg"
+            icon: HumanResourcesIcon
         },
         {
             title: "Operations & Supply Chain Management (OSCM)",
-            icon: "https://bvim.brahmavalley.edu.in/public/uploads/1752142609_aaf74d2dc5467d302a1c.svg"
+            icon: OperationsIcon
         },
         {
             title: "Business Analytics (BA)",
-            icon: "https://bvim.brahmavalley.edu.in/public/uploads/1752142643_4246d2556922d4cea894.svg"
+            icon: BusinessAnalyticsIcon
         }
     ];
 
@@ -82,13 +88,16 @@ const Specializations = () => {
                 </div>
 
                 <div className="text-center mt-14">
-                    <motion.a
-                        href="#"
-                        whileHover={{ x: 8 }}
-                        className="inline-flex items-center gap-3 text-bviom-green font-heading font-semibold text-lg hover:text-bviom-green-300 transition-colors"
-                    >
-                        View All Specializations <FaArrowRight className="text-sm" />
-                    </motion.a>
+                    {/* here we will use link */}
+                    <Link to="/specialization">
+                        <motion.button
+                            whileHover={{ scale: 1.03 }}
+                            whileTap={{ scale: 0.97 }}
+                            className="btn-primary text-[11px] py-2.5 px-5 rounded-lg"
+                        >
+                            View Details
+                        </motion.button>
+                    </Link>
                 </div>
             </div>
         </section>

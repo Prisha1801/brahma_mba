@@ -2,35 +2,32 @@ import React from "react";
 import HeroSection from "../common/components/HeroSection";
 import { upcomingEventHero } from "../common/data/heroData";
 import { Facebook, Twitter, Linkedin, Pin } from "lucide-react";
+import Person from "../../assets/person.png"
 
 const events = [
     {
         id: 1,
         title: "Management Fest",
         subtitle: "Mr. Vijay Khairnar",
-        image:
-            "https://bvim.brahmavalley.edu.in/uploads/upcoming/1752054349_03e56c0225b9d594f15b.jpg",
+        image: Person
     },
     {
         id: 2,
         title: "Ms. Jane Doe",
         subtitle: "Industrial Visits",
-        image:
-            "https://bvim.brahmavalley.edu.in/uploads/upcoming/1752054471_24a8696c8877ac70fbcf.jpg",
+        image: Person
     },
     {
         id: 3,
         title: "Mr. John Smith",
         subtitle: "Management Week",
-        image:
-            "https://bvim.brahmavalley.edu.in/uploads/upcoming/1752054498_bd2eecd3fcc879e895c6.jpg",
+        image: Person
     },
     {
         id: 4,
         title: "Ms. Sarah Lee",
         subtitle: "National Seminars",
-        image:
-            "https://bvim.brahmavalley.edu.in/uploads/upcoming/1752054528_ee9192952bbeff5d7ce0.jpg",
+        image: Person
     },
 ];
 

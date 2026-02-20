@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from '../common/components/HeroSection';
 import { libraryHero } from '../common/data/heroData';
+import LibraryImage from '../../assets/posters/library1.png';
 
 const Library = () => {
     return (
@@ -17,7 +18,7 @@ const Library = () => {
                             {/* Image Side */}
                             <div className="md:w-5/12">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/1752233640_52f082e1fb819763898b.png"
+                                    src={LibraryImage}
                                     alt="Library Facility"
                                     className="w-full h-full object-cover"
                                 />

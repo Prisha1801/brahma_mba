@@ -1,25 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Education from '../../assets/icons/education.png';
+import Student from '../../assets/icons/student.png';
+import Alumni from '../../assets/icons/alumni.png';
+import Placement from '../../assets/icons/placement.png';
 
 const InformaticsBox = () => {
     const infoItems = [
         {
-            icon: "https://bvim.brahmavalley.edu.in/public/assets/img/education.png",
+            icon: Education,
             label: "Industry-Relevant Curriculum",
             delay: 0
         },
         {
-            icon: "https://bvim.brahmavalley.edu.in/public/assets/img/student.png",
+            icon: Student,
             label: "Personalized Mentorship",
             delay: 0.15
         },
         {
-            icon: "https://bvim.brahmavalley.edu.in/public/assets/img/alumni.png",
+            icon: Alumni,
             label: "Robust Alumni Network",
             delay: 0.3
         },
         {
-            icon: "https://bvim.brahmavalley.edu.in/public/assets/img/placemen.png",
+            icon: Placement,
             label: "Placement Support",
             delay: 0.45
         }

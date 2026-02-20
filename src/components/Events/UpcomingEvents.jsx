@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaClock, FaMapMarkerAlt, FaLongArrowAltRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import Img1 from '../../assets/event/img1.png'
+import Img2 from '../../assets/event/img2.jpg'
 
 const UpcomingEvents = () => {
     const events = [
@@ -10,7 +13,7 @@ const UpcomingEvents = () => {
             title: "Statistics are the hard facts that back up your argument. Whether you're trying to persuade, inform, or entertain, sta...",
             time: "10:00 AM to 10:00PM",
             location: "Nashik Auditorium",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/carousel/1752818208_d0f1274fa6a74166fc13.jpeg"
+            image: Img1
         },
         {
             day: "31",
@@ -18,7 +21,7 @@ const UpcomingEvents = () => {
             title: "Statistics are the hard facts that back up your argument. Whether you're trying to persuade, infor..",
             time: "10:00AM",
             location: "Auditorium",
-            image: "https://bvim.brahmavalley.edu.in/public/uploads/carousel/1752822384_7a87eb6316ca4b013131.jpg"
+            image: Img2
         }
     ];
 
@@ -107,13 +110,16 @@ const UpcomingEvents = () => {
                 </div>
 
                 <div className="text-center mt-14">
-                    <motion.a
-                        href="#"
-                        whileHover={{ x: 8 }}
-                        className="inline-flex items-center gap-3 text-bviom-green font-heading font-semibold text-lg hover:text-bviom-green-300 transition-colors"
-                    >
-                        View All Events <FaLongArrowAltRight />
-                    </motion.a>
+                    {/* we will use link */}
+                    <Link to="/events">
+                        <motion.button
+                            whileHover={{ scale: 1.03 }}
+                            whileTap={{ scale: 0.97 }}
+                            className="btn-primary text-[11px] py-2.5 px-5 w-fit rounded-lg"
+                        >
+                            View All Events
+                        </motion.button>
+                    </Link>
                 </div>
             </div>
         </section>

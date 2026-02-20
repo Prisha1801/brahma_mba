@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import P1 from '../../assets/home/p1.jpeg';
+import P2 from '../../assets/home/p2.jpeg';
+import P3 from '../../assets/home/p3.jpg';
 
 const HeroCarousel = () => {
     const slides = [
-        { url: "https://bvim.brahmavalley.edu.in/public/uploads/carousel/1752818208_d0f1274fa6a74166fc13.jpeg" },
-        { url: "https://bvim.brahmavalley.edu.in/public/uploads/carousel/1752822384_7a87eb6316ca4b013131.jpg" },
-        { url: "https://bvim.brahmavalley.edu.in/public/uploads/carousel/1752823057_ab31c364eae417fb7815.jpeg" }
+        { url: P1 },
+        { url: P2 },
+        { url: P3 }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -60,8 +63,8 @@ const HeroCarousel = () => {
                         key={index}
                         onClick={() => setCurrentIndex(index)}
                         className={`transition-all duration-500 rounded-full ${index === currentIndex
-                                ? 'w-10 h-2 bg-bviom-green shadow-glow'
-                                : 'w-2 h-2 bg-white/40 hover:bg-white/60'
+                            ? 'w-10 h-2 bg-bviom-green shadow-glow'
+                            : 'w-2 h-2 bg-white/40 hover:bg-white/60'
                             }`}
                     />
                 ))}

@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from '../common/components/HeroSection';
 import { presidentDeskHero } from '../common/data/heroData';
+import PresidentImage from '../../assets/posters/president.png';
 
 const PresidentDesk = () => {
     return (
@@ -20,7 +21,7 @@ const PresidentDesk = () => {
                             {/* LEFT SIDE - IMAGE */}
                             <div className="text-center">
                                 <img
-                                    src="https://bvim.brahmavalley.edu.in/public/uploads/president/president_1752123239.png"
+                                    src={PresidentImage}
                                     alt="President"
                                     className="w-full max-h-[450px] object-cover rounded-xl shadow-md"
                                 />
