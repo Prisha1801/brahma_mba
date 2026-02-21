@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from '../common/components/HeroSection';
 import { CommitteeHero } from '../common/data/heroData';
+import { FaFilePdf } from "react-icons/fa";
 
 const committees = [
     {
@@ -86,11 +87,7 @@ const Committees = () => {
                                 <div className="h-40 bg-[#d9dee7] flex items-center justify-center relative">
                                     <div className="absolute -bottom-10">
                                         <div className="w-24 h-24 rounded-full border-4 border-white shadow-md overflow-hidden bg-white flex items-center justify-center">
-                                            <img
-                                                src="/assets/person.png"
-                                                alt="committee"
-                                                className="w-full h-full object-cover"
-                                            />
+                                            <FaFilePdf className="text-5xl text-[#e63946]" />
                                         </div>
                                     </div>
                                 </div>
@@ -105,9 +102,13 @@ const Committees = () => {
                                         href={committee.pdf}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center justify-center gap-2 bg-[#e63946] hover:bg-[#d62839] text-white px-8 py-3 rounded-full font-medium transition duration-300"
+                                        className="inline-flex items-center gap-2 
+           bg-white text-[#e63946] 
+           border border-[#e63946] 
+           hover:bg-[#e63946] hover:text-white
+           px-8 py-3 rounded-full font-medium transition duration-300"
                                     >
-                                        📄 View PDF
+                                        <span>View PDF</span>
                                     </a>
                                 </div>
                             </div>

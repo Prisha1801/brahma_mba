@@ -31,7 +31,7 @@ const DirectorDesk = () => {
                                 <img
                                     src={Directormage}
                                     alt="Director"
-                                    className="w-full max-h-[450px] object-cover rounded-xl shadow-md"
+                                    className="w-full max-h-[450px] object-contain rounded-xl shadow-md"
                                 />
 
                                 <div className="mt-6">

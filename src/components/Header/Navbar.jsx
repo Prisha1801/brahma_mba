@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import logo1 from '../../assets/posters/left-logo.png';
 import logo2 from '../../assets/posters/right-logo.png';
 
-const Dropdown = ({ title, items }) => {
+const Dropdown = ({ title, items, closeMenu }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -31,6 +31,7 @@ const Dropdown = ({ title, items }) => {
                             <li key={index}>
                                 <Link
                                     to={item.link}
+                                    onClick={closeMenu}
                                     className="block px-4 py-2.5 text-[13px] text-gray-600 hover:bg-bviom-green/10 hover:text-bviom-green rounded-lg transition-all font-medium"
                                 >
                                     {item.label}
@@ -135,10 +136,13 @@ const Navbar = () => {
     ];
 
     return (
-        <header className="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+        <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
             <nav className="container mx-auto px-4 lg:px-8 py-2 flex items-center justify-between">
                 {/* Left Logo */}
-                <Link to="/">
+                <Link
+                    to="/"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                >
                     <img
                         src={logo1}
                         alt="BVIOM Logo"
@@ -176,7 +180,7 @@ const Navbar = () => {
                         </li>
 
                         {navData.slice(0, 3).map((group, idx) => (
-                            <Dropdown key={idx} title={group.title} items={group.items} />
+                            <Dropdown key={idx} title={group.title} items={group.items} closeMenu={() => setIsMobileMenuOpen(false)} />
                         ))}
 
                         <li>
@@ -187,7 +191,7 @@ const Navbar = () => {
                         </li>
 
                         {navData.slice(3).map((group, idx) => (
-                            <Dropdown key={idx + 3} title={group.title} items={group.items} />
+                            <Dropdown key={idx + 3} title={group.title} items={group.items} closeMenu={() => setIsMobileMenuOpen(false)} />
                         ))}
 
                         <li>

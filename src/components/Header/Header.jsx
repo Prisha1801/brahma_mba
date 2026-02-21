@@ -5,12 +5,14 @@ import Navbar from './Navbar';
 
 const Header = () => {
     return (
-        <header className="flex flex-col w-full">
-            <TopBar />
-            <InfoBar />
-            <MarqueeSection />
+        <>
+            <div className="flex flex-col w-full">
+                <TopBar />
+                <InfoBar />
+                <MarqueeSection />
+            </div>
             <Navbar />
-        </header>
+        </>
     );
 };
 
