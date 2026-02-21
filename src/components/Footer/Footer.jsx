@@ -29,10 +29,10 @@ const Footer = () => {
             <div className="h-1 bg-gradient-to-r from-bviom-green via-emerald-400 to-bviom-green" />
 
             <div className="container mx-auto px-4 md:px-8 pt-16 pb-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+                <div className="flex flex-col md:flex-row justify-between gap-12 mb-14">
 
                     {/* Quick Links */}
-                    <div>
+                    <div className="flex-1">
                         <h4 className="font-heading text-lg font-bold text-white mb-6 flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-bviom-green inline-block" />
                             Quick Links
@@ -49,7 +49,7 @@ const Footer = () => {
                     </div>
 
                     {/* Additional Links */}
-                    <div>
+                    <div className="flex-1">
                         <h4 className="font-heading text-lg font-bold text-white mb-6 flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-bviom-green inline-block" />
                             Additional Links
@@ -66,7 +66,7 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div>
+                    <div className="flex-1">
                         <h4 className="font-heading text-lg font-bold text-white mb-6 flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-bviom-green inline-block" />
                             Contact Info
@@ -92,26 +92,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Newsletter */}
-                    <div>
-                        <h4 className="font-heading text-lg font-bold text-white mb-6 flex items-center gap-2">
-                            <span className="w-2 h-2 rounded-full bg-bviom-green inline-block" />
-                            Newsletter
-                        </h4>
-                        <p className="text-white/50 text-[14px] leading-relaxed mb-5">
-                            Stay updated with our latest news and offers.
-                        </p>
-                        <div className="flex h-12 rounded-xl overflow-hidden border border-white/10">
-                            <input
-                                type="email"
-                                placeholder="Your Email Address"
-                                className="flex-grow px-4 bg-white/5 text-white outline-none placeholder:text-white/30 text-sm font-medium focus:bg-white/10 transition-colors"
-                            />
-                            <button className="bg-bviom-green text-white px-5 font-heading font-bold text-[11px] uppercase tracking-wider hover:bg-bviom-green-600 transition-colors">
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
 
                 </div>
 
@@ -123,7 +103,7 @@ const Footer = () => {
 
                     <div className="flex gap-2">
                         {[FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn].map((Icon, idx) => (
-                            <Link to="/contact">
+                            <Link to="/contact" key={idx}>
                                 <motion.button
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 1.97 }}
