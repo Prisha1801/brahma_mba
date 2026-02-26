@@ -115,9 +115,9 @@ export const eligibilityHero = {
     overlay: true,
 };
 
-export const facilitiesHero = {
+export const facultiesHero = {
     backgroundImage: studentPlacementHeroImage,
-    title: "Facilities",
+    title: "Faculties",
     subtitle: "Discover excellence in education and innovation.",
     overlay: true,
 };

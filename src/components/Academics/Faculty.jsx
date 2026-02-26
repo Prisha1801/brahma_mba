@@ -1,12 +1,7 @@
 import React from "react";
 import HeroSection from "../common/components/HeroSection";
-import { facilitiesHero } from "../common/data/heroData";
-import rajaramImg from "../../assets/board-members/Mr. Rajaram D.Pangavhane.png";
-import dhanishaImg from "../../assets/board-members/Dr.Dhanisha G. Pangavhane.png";
-import gauravImg from "../../assets/board-members/Mr. Gaurav R. Pangavhane.png";
-import ashwiniImg from "../../assets/board-members/Mrs. Ashwini A Bhosale.jpg";
-import sheetalImg from "../../assets/board-members/Mrs. Sheetal Y. Mule.jpg";
-import prabhavatiImg from "../../assets/board-members/Mrs.Prabhavati R. Pangavhane.jpg";
+import { facultiesHero } from "../common/data/heroData";
+import sheetalImg from "../../assets/staff/sheetal.png";
 import Directormage from '../../assets/posters/director.jpg';
 import staff3 from '../../assets/staff/dimple.png';
 import staff4 from '../../assets/staff/rahul.png';
@@ -86,7 +81,7 @@ const Faculty = () => {
     return (
         <>
             {/* HERO SECTION */}
-            <HeroSection {...facilitiesHero} />
+            <HeroSection {...facultiesHero} />
 
 
             {/* FACULTY GRID */}
@@ -106,7 +101,7 @@ const Faculty = () => {
                                     <img
                                         src={member.image}
                                         alt={member.name}
-                                        className="w-full h-full object-contain"
+                                        className="w-full h-full object-cover object-top"
                                     />
                                 </div>
 
