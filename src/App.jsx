@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -45,7 +45,88 @@ import DVVHistory from './components/NAAC/DVVHistory';
 import Gallery from './components/NAAC/Gallery';
 import Contact from './components/NAAC/Contact';
 
+// ── Protection enabled when VITE_DISABLE_DEVTOOLS=true in .env ───────────────
+const IS_PROTECTED = import.meta.env.VITE_DISABLE_DEVTOOLS === "true";
+
 function App() {
+  const [showBlockNotice, setShowBlockNotice] = useState(false);
+
+  useEffect(() => {
+    if (!IS_PROTECTED) return;
+
+    const showNotice = () => {
+      setShowBlockNotice(true);
+      setTimeout(() => setShowBlockNotice(false), 3000);
+    };
+
+    const blockAction = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      showNotice();
+      return false;
+    };
+
+    const handleKeyDown = (e) => {
+      const blocked =
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && ["I", "J", "C", "K"].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && ["U", "S", "P"].includes(e.key.toUpperCase())) ||
+        (e.metaKey && e.altKey && ["I", "J", "C"].includes(e.key.toUpperCase())); // Mac
+
+      if (blocked) {
+        e.preventDefault();
+        e.stopPropagation();
+        showNotice();
+        return false;
+      }
+    };
+
+    // Disable right-click
+    document.addEventListener("contextmenu", blockAction);
+    // Disable keyboard shortcuts
+    document.addEventListener("keydown", handleKeyDown);
+    // Disable text selection & drag
+    document.addEventListener("selectstart", blockAction);
+    document.addEventListener("dragstart", blockAction);
+    // Disable copy / cut
+    document.addEventListener("copy", blockAction);
+    document.addEventListener("cut", blockAction);
+
+    // Disable user select via CSS
+    document.body.style.userSelect = "none";
+    document.body.style.webkitUserSelect = "none";
+    document.body.style.MozUserSelect = "none";
+    document.body.style.msUserSelect = "none";
+
+    // DevTools window size detection
+    const devToolsInterval = setInterval(() => {
+      const widthThreshold = window.outerWidth - window.innerWidth > 160;
+      const heightThreshold = window.outerHeight - window.innerHeight > 160;
+      if (widthThreshold || heightThreshold) {
+        document.body.innerHTML =
+          "<div style='background:#111;color:#fff;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:sans-serif;gap:12px'>" +
+          "<span style='font-size:48px'>🚫</span>" +
+          "<span style='font-size:22px;font-weight:bold'>Developer Tools Detected</span>" +
+          "<span style='font-size:14px;color:#aaa'>Please close DevTools to continue.</span>" +
+          "</div>";
+      }
+    }, 1000);
+
+    return () => {
+      document.removeEventListener("contextmenu", blockAction);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("selectstart", blockAction);
+      document.removeEventListener("dragstart", blockAction);
+      document.removeEventListener("copy", blockAction);
+      document.removeEventListener("cut", blockAction);
+      document.body.style.userSelect = "";
+      document.body.style.webkitUserSelect = "";
+      document.body.style.MozUserSelect = "";
+      document.body.style.msUserSelect = "";
+      clearInterval(devToolsInterval);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -95,6 +176,13 @@ function App() {
         </Routes>
       </main>
       <Footer />
+
+      {/* Block notice toast */}
+      {IS_PROTECTED && showBlockNotice && (
+        <div className="fixed bottom-4 right-4 z-[9999] bg-red-600 text-white text-xs sm:text-sm px-4 py-3 rounded-lg shadow-2xl pointer-events-none select-none animate-pulse">
+          🚫 Action Blocked — Content is protected
+        </div>
+      )}
     </div>
   );
 }

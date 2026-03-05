@@ -3,7 +3,7 @@ import HeroSection from '../common/components/HeroSection';
 import { lmcComiteeHero } from '../common/data/heroData';
 import rajaramImg from "../../assets/board-members/Mr. Rajaram D.Pangavhane.png";
 import dhanishaImg from "../../assets/board-members/Dr.Dhanisha G. Pangavhane.png";
-import gauravImg from "../../assets/board-members/Mr. Gaurav R. Pangavhane.png";
+import gauravImg from "../../assets/board-members/Mr. Gaurav R. Pangavhane.jpeg";
 import ashwiniImg from "../../assets/board-members/Mrs. Ashwini A Bhosale.jpg";
 import sheetalImg from "../../assets/board-members/Mrs. Sheetal Y. Mule.jpg";
 import prabhavatiImg from "../../assets/board-members/Mrs.Prabhavati R. Pangavhane.jpg";
